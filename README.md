@@ -33,3 +33,10 @@
                       *thR0@E             l@0Rht=
                          .=+o             *+=.
 ```
+
+
+# Environment Variables / dotenv
+```env
+GIT_USERNAME=
+GIT_EMAIL=
+```
