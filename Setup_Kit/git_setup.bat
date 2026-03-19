@@ -1,12 +1,13 @@
 @echo off
 
-if not exist ".env" (
-    echo Error: .env file not found.
-    exit /b 1
+if not exist "..\.env" (
+    echo Creating a default .env file...
+    echo GIT_USERNAME=> "..\.env"
+    echo GIT_EMAIL=>> "..\.env"
 )
 
 echo Reading .env file...
-for /f "usebackq tokens=1,* delims==" %%A in (".env") do (
+for /f "usebackq tokens=1,* delims==" %%A in ("..\.env") do (
     set "%%A=%%B"
 )
 
