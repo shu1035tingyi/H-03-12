@@ -1,4 +1,7 @@
 @echo off
+:: Change the working directory to the folder containing this batch script
+cd /d "%~dp0"
+
 echo Initiating all setup scripts...
 echo.
 
